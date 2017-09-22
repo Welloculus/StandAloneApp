@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.amazonaws.youruserpools.MainActivity">
+    <item
+    android:id="@+id/user_about_app"
+    android:orderInCategory="200"
+    android:icon="@drawable/info_icon_white"
+    android:title=""
+    app:showAsAction="ifRoom"/>
+</menu>
