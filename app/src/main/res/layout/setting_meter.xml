@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Top button bar background -->
+
+    <RelativeLayout
+        android:id="@+id/top_button_bar_background"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/app_theme"
+        android:contentDescription="@string/cd_image"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp">
+
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/cd_image"
+            android:src="@drawable/back_arrow_white" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/setting_home_meter"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_background"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/top_button_bar_background"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_meter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/setting_current_ble_meter"
+            android:textColor="@color/app_theme"
+            android:textSize="20sp" />
+
+        <ProgressBar
+            android:id="@+id/pb_search"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/tv_meter"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/cd_image"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:tag="0"
+                android:background="@color/app_theme"
+                android:textColor="@color/white"
+                android:text="@string/meter_search" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/divider"
+        android:layout_below="@id/search_background"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"></LinearLayout>
+    <LinearLayout
+        android:id="@+id/meter_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:gravity="center|left"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lv_background"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <ListView
+                android:id="@+id/lv_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:choiceMode="singleChoice" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

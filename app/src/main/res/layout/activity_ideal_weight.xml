@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+              android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:id="@+id/forgot_password_toolbar_title"
+                android:text="@string/ideal_weight_title"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginRight="55dp"
+                android:layout_marginEnd="55dp"
+                />
+        </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is your height?"
+        android:textSize="16sp"
+        android:id="@+id/textViewUserPasswordLabel" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:layout_height="@dimen/activity_text_height"
+                android:paddingLeft="@dimen/activity_text_padding"
+                android:paddingRight="@dimen/activity_text_padding"
+                android:id="@+id/edit_height"
+                android:background="@drawable/text_border_selector"
+                android:hint="Height"
+                android:textColorHint="?attr/colorPrimary"
+                android:inputType="numberDecimal"/>
+
+            <Spinner
+                android:id="@+id/spin_height_unit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:spinnerMode="dropdown"
+                android:background="@drawable/spinner"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/height_units" />
+
+        </LinearLayout>
+
+
+    <Button
+        style="@style/ButtonAppearance"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate your Ideal weight"
+        android:textAllCaps="false"
+        android:id="@+id/btn_ideal_weight"/>
+
+
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:text=" "
+            android:id="@+id/text_desc"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text=" "
+            android:id="@+id/text_result" />
+
+    </LinearLayout>
+
+</LinearLayout>
