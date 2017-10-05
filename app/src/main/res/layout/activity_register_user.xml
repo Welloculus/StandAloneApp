@@ -6,7 +6,7 @@
               android:layout_height="match_parent"
               android:orientation="vertical"
               android:fitsSystemWindows="true"
-              tools:context="com.transility.welloculus.ui.RegisterUser">
+              tools:context="com.transility.tracker.ui.RegisterUser">
 
 
     <android.support.v7.widget.Toolbar

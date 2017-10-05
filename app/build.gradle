@@ -15,7 +15,7 @@ android {
     buildToolsVersion "25.0.2"
 
     defaultConfig {
-        applicationId "com.transility.welloculus"
+        applicationId "com.transility.tracker"
         minSdkVersion 14
         targetSdkVersion 23
         versionCode 1
@@ -83,7 +83,7 @@ sonarqube {
     properties {
         property "sonar.host.url", "http://172.26.39.96:9000"
         property "sonar.projectName", "EE_HealthCare_Android"
-        property "sonar.projectKey", "com.transility.welloculus"
+        property "sonar.projectKey", "com.transility.tracker"
         property "sonar.projectVersion", "1.0"
         property "sonar.sources","src/main/java"
         property 'sonar.sourceEncoding', 'UTF-8'

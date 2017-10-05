@@ -6,7 +6,7 @@
                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
                 android:layout_marginRight="@dimen/activity_horizontal_margin"
                 android:layout_marginTop="@dimen/activity_vertical_margin"
-                tools:context="com.transility.welloculus.ui.SignUpConfirm"
+                tools:context="com.transility.tracker.ui.SignUpConfirm"
                 tools:showIn="@layout/activity_sign_up_confirm">
 
 

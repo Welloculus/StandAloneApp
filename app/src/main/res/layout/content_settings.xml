@@ -5,7 +5,7 @@
               android:layout_height="match_parent"
               android:padding="@dimen/activity_vertical_margin"
               android:orientation="vertical"
-              tools:context="com.transility.welloculus.ui.SettingsActivity"
+              tools:context="com.transility.tracker.ui.SettingsActivity"
               tools:showIn="@layout/activity_settings">
 
     <!--<RelativeLayout

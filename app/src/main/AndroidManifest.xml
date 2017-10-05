@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.transility.welloculus">
+    package="com.transility.tracker">
 
     <uses-feature android:name="android.hardware.usb.host" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -12,7 +12,7 @@
 
 
     <application
-        android:name="com.transility.welloculus.app.HealthCareApp"
+        android:name=".app.HealthCareApp"
         android:allowBackup="true"
         android:icon="@drawable/app_icon"
         android:label="@string/app_name"
@@ -20,7 +20,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.transility.welloculus.ui.SplashActivity"
+            android:name=".ui.SplashActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
@@ -32,37 +32,37 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.transility.welloculus.ui.AboutUsActivity"
+            android:name=".ui.AboutUsActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.transility.welloculus.ui.DashboardActivity"
+            android:name=".ui.DashboardActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/FullScreenTheme" />
         <activity
-            android:name="com.transility.welloculus.ui.DeviceListActivity"
+            android:name=".ui.DeviceListActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.transility.welloculus.ui.UtilitiesActivity"
+            android:name=".ui.UtilitiesActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.transility.welloculus.ui.BMIActivity"
+            android:name=".ui.BMIActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.transility.welloculus.ui.IdealWeightActivity"
+            android:name=".ui.IdealWeightActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.transility.welloculus.ui.ReportsActivity"
+            android:name=".ui.ReportsActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="com.transility.welloculus.fora.PCLinkLibraryDemoActivity"
+            android:name=".fora.PCLinkLibraryDemoActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
             <meta-data
@@ -71,17 +71,17 @@
 
         </activity>
         <activity
-            android:name="com.transility.welloculus.fora.PCLinkLibraryCommuTestActivity"
+            android:name=".fora.PCLinkLibraryCommuTestActivity"
             android:label="@string/command_test_menu"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name="com.transility.welloculus.fora.PCLinkLibraryCommuTestActivityForKNV"
+            android:name=".fora.PCLinkLibraryCommuTestActivityForKNV"
             android:label="@string/command_test_menu"
             android:screenOrientation="portrait"/>
 
         <receiver
-            android:name="com.transility.welloculus.app.receiver.HeartRateReceiver"
+            android:name=".app.receiver.HeartRateReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="NEW_DATA_RECEIVED" />
