@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">W Tracker</string>
+    <string name="app_name">Welloculus Tracker</string>
 
     <!-- Strings related to login -->
     <string name="signin_title">Sign in</string>
@@ -274,7 +274,7 @@
     <string name="device_mac_address">Device Mac Address:</string>
     <string name="start_search_meter">Start searching meters,please wait a while</string>
     <string name="connection_meter_and_get_result">Start connecting meter and get result, please wait a while</string>
-    <string name="bluetooth_occur_error">Bluetooth occur error,please enable bluetooth and pair remot devices</string>
+    <string name="bluetooth_occur_error">Bluetooth error occured, please enable bluetooth and pair remot devices</string>
     <string name="bluetooth_need_to_pair">Please go to "Settings-->Wireless &amp; networks" pair Bluetooth devices</string>
     <string name="check_bt_fail">device singal to low!!!!</string>
     <string name="not_support_meter">Not support meter!!!!</string>
